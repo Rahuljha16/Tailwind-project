@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://abs.twimg.com/favicons/twitter-pip.3.ico">
     <title>Home/X</title>
     <link rel="stylesheet" href="./css/output.css">
     <link rel="stylesheet"
@@ -25,7 +26,7 @@
                 </svg>
 
             </div>
-            <div class="sidebar flex justify-end">
+            <div class="sidebar flex items-end-end flex-col">
 
                 <ul class=" flex flex-col text-2xl  px-12 font-bold">
                     <li
@@ -46,7 +47,7 @@
                     </li>
                     <li
                         class="flex justify-start items-center gap-3 hover:bg-slate-900 hover:cursor-pointer hover:rounded-full px-5 py-3">
-                        <span class="material-symbols-outlined text-3xl">home</span>Grok
+                        <span class="material-symbols-outlined">hide_source</span>Grok
                     </li>
                     <li
                         class="flex justify-start items-center gap-3 hover:bg-slate-900 hover:cursor-pointer hover:rounded-full px-5 py-3">
@@ -54,7 +55,7 @@
                     </li>
                     <li
                         class="flex justify-start items-center gap-3 hover:bg-slate-900 hover:cursor-pointer hover:rounded-full px-5 py-3">
-                        <span class="material-symbols-outlined text-3xl">home</span>Premium
+                        <span class="material-symbols-outlined">paid</span>Premium
                     </li>
                     <li
                         class="flex justify-start items-center gap-3 hover:bg-slate-900 hover:cursor-pointer hover:rounded-full px-5 py-3">
@@ -67,6 +68,11 @@
                     <li
                         class="flex justify-start items-center gap-3 hover:bg-slate-900 hover:cursor-pointer hover:rounded-full px-5 py-3">
                         <span class="material-symbols-outlined text-3xl">pending</span>More
+                    </li>
+                    <li>
+                        <div class="button w-full justify-start my-4">
+                            <button class="bg-blue-600 px-20 text-xl rounded-full py-2 text-black">Post</button>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -81,17 +87,111 @@
             </div>
             <div class="h-[1px] w-full bg-gray-700"></div>
             <div class="foryou flex gap-1">
-                <div class="img m-2">
-                    <img src="image1.png"  alt="">
+                <div class="img m-2 w-16">
+                    <img src="image1.png" alt="" class="w-15 h-15 rounded-full">
                 </div>
-                <input class="w-full h-7 my-5 text-xl bg-black outline-none text-white " type="text" placeholder="What is happening?">
+                <input class="w-full h-7 my-5 text-xl bg-black outline-none text-white " type="text"
+                    placeholder="What is happening?">
             </div>
             <div class="text-blue-600 flex items-center mx-12">
-                    <span class="material-symbols-outlined text-blue-600">globe_asia</span>
-                    <span class="text-blue-600">Everyone can reply</span>
+                <span class="material-symbols-outlined text-blue-600">globe_asia</span>
+                <span class="text-blue-600 font-bold">Everyone can reply</span>
+            </div>
+            <div class="h-[0.2px] w-[90%] bg-gray-700"></div>
+            <div class="blueicons flex gap-3 text-blue-700 cursor-pointer mx-8 p-4"><span
+                    class="material-symbols-outlined">image</span>
+                <span class="material-symbols-outlined">gif_box</span>
+                <span class="material-symbols-outlined">ballot</span>
+                <span class="material-symbols-outlined">sentiment_satisfied</span>
+                <span class="material-symbols-outlined">pending_actions</span>
+                <span class="material-symbols-outlined">location_on</span>
+            </div>
+            <div class="h-[0.2px] bg-gray-700"></div>
+            <div class="posts w- my-1">
+                <div class="post flex flex-col rounded-lg shadow-sm p-2 space-y-2 bg-black">
+                    <!-- Top row: Profile photo and user info -->
+                    <div class="flex items-center space-x-2">
+                        <img src="https://pbs.twimg.com/profile_images/1833509376528945157/5AeMNn9f_bigger.jpg"
+                            alt="Profile" class="w-12 h-11 rounded-full" />
+                        <span class="text-sm text-white hover:underline font-medium">Narendra Modi</span>
+                            <span class="text-gray-500"> @narendramodi · 21h</span>
+                        </span>
+                    </div>
+
+                    <!-- Post content (text or caption) -->
+                    <div class="text-sm  text-white">
+                        Chaired a meeting on India’s mission to eliminate TB. Driven by active public participation, the
+                        movement has gained significant momentum over the last few years. Our Government remains
+                        committed to working closely with all stakeholders to realise the vision of a TB-free India.
+                    </div>
+
+                    <!-- Post main image -->
+                    <div>
+                        <img src="https://pbs.twimg.com/media/Gq1W7qmXYAAN-Jq?format=jpg&name=900x900"
+                            alt="Post content image" class="w-full rounded-lg" />
+                    </div>
                 </div>
-                <div class="h-[0.2px] w-[90%] bg-gray-700"></div>
+                <div class="posts  my-3">
+                    <div class="post flex flex-col rounded-lg shadow-sm p-2 space-y-2 bg-black">
+                        <!-- Top row: Profile photo and user info -->
+                        <div class="flex items-center space-x-2">
+                            <img src="https://pbs.twimg.com/profile_images/1685658187825811457/h9QgcNrM_bigger.jpg"
+                                alt="Profile" class="w-8 h-8 rounded-full" />
+                            <span class="text-sm text-white hover:underline font-medium">Farhan</span>
+                                <span class="text-gray-500"> @mhdfaran · 5h</span>
+                            </span>
+                        </div>
+
+                        <!-- Post content (text or caption) -->
+                        <div class="text-sm text-white">
+                            This is absolute cinema…
+
+                            PixVerse V4.5 just dropped:
+
+                            → Cinematic camera moves
+                            → Dance effects
+                            → Multi-image magic
+
+                            And it’s fast. Like record-breaking fast.
+
+                            Details below 👇
+                        </div>
+
+                        <!-- Post main image -->
+                        <div>
+                            <img src="https://pbs.twimg.com/media/Gq1mFlgbAAY041A?format=jpg&name=small"
+                                alt="Post content image" class="w-full rounded-lg" />
+                        </div>
+                    </div>
+                    <div class="posts  my-3">
+                        <div class="post flex flex-col border rounded-lg shadow-sm p-2 space-y-2 bg-black">
+                            <!-- Top row: Profile photo and user info -->
+                            <div class="flex items-center space-x-2">
+                                <img src="https://pbs.twimg.com/profile_images/1559007400409300992/IAVP2tXw_bigger.jpg"
+                                    alt="Profile" class="w-8 h-8 rounded-full" />
+                                <span class="text-sm text-white hover:underline font-medium">Vertical Charlie</span>
+                                    <span class="text-gray-500">@CharlieVertical · 18h</span>
+                            </span>
+                            </div>
+
+                            <!-- Post content (text or caption) -->
+                            <div class="text-sm text-white">
+                                Here's a wallpaper for you guys.
+                            </div>
+
+                            <!-- Post main image -->
+                            <div>
+                                <img src="https://pbs.twimg.com/media/Gq03N9MbAAMR3xA?format=jpg&name=small" alt="Post content image"
+                                    class="w-full rounded-lg" />
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
         </div>
+
 
         <div class="third w-full">
             <div class="search m-3">
@@ -99,7 +199,8 @@
             </div>
             <div class="premium px-3 bg-[#16181c] w-1/2 m-3 rounded-xl space-y-2">
                 <h1 class="font-bold text-2xl">Subscribe to Premium</h1>
-                <p class="space-y-3">Subscribe to unlock new features and if eligible, receive a share of revenue.</p>
+                <p class="space-y-3">Subscribe to unlock new features and if eligible, receive a share of revenue.
+                </p>
                 <button class="font-bold m-3 my-5 bg-blue-600 rounded-xl px-3">Subscribe</button>
             </div>
             <div class="whats m-3  bg-[#16181c] w-1/2 py-5 rounded-xl space-y-3">
